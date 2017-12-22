@@ -19,13 +19,16 @@ module.exports = (config) => {
     paths.push('.eslintrc')
   }
 
-  if (config.taobao) {
-    paths.push('.npmrc')
-  }
-
   paths.forEach((p) => {
     fs.copySync(getPath(p), p)
   })
+
+  if (config.taobao) {
+    fs.outputFileSync('./.npmrc', 
+`phantomjs_cdnurl=http://cnpmjs.org/downloads
+sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
+registry=https://registry.npm.taobao.org`)
+  }
 
   if (config.rctui) return
 

@@ -35,7 +35,10 @@ router.get('/', async (ctx) => {
     ...(config.dev.scripts || []),
     ...Object.keys(config.webpack.entry).map(s => prepath.replace('*.*', s + '.js')),
   ]
-  const css = prepath.replace('*.*', config.webpack.extractTextPluginPath)
+  let css
+  if (config.webpack.extractTextPluginPath) {
+    css = prepath.replace('*.*', config.webpack.extractTextPluginPath)
+  }
   ctx.body = template({ scripts, appName: config.appName, css })
 })
 
