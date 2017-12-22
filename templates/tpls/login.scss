@@ -1,0 +1,24 @@
+.form {
+  margin-top: 30px;
+
+  div {
+    margin-bottom: 16px;
+
+    label {
+      display: inline-block;
+      width: 120px;
+      text-align: right;
+      margin-right: 12px;
+    }
+
+    input {
+      padding: 8px 12px;
+      outline: none;
+    }
+
+    button {
+      margin-left: 12px;
+      padding: 8px 12px;
+    }
+  }
+}
