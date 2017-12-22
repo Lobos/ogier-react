@@ -1,5 +1,5 @@
 {
-  "name": "ogier-cli",
+  "name": "ogier-react",
   "version": "1.0.0",
   "description": "Create React apps starter kit",
   "main": "index.js",
@@ -8,6 +8,10 @@
     "ogier-react": "./index.js"
   },
   "author": "lobos841@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lobos/ogier-react.git"
+  },
   "license": "MIT",
   "dependencies": {
     "cross-spawn": "^5.1.0",
