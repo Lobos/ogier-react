@@ -19,9 +19,9 @@ npm start 或 yarn start
 执行完成后会在项目根目录创建一个Config.js文件，大部分dev server配置和webpack配置修改这个文件即可。
 
 ## Feature
-[x] webpack babel 配置
-[x] css 配置，包含sass和less，CSS Module 配置
-[x] eslint 配置
-[x] react-router, redux
-[x] 一个简单demo，包含 redux 和 react-router
-[x] 代理服务器
+- webpack babel 配置
+- css 配置，包含sass和less，CSS Module 配置
+- eslint 配置
+- react-router, redux
+- 一个简单demo，包含 redux 和 react-router
+- 代理服务器
